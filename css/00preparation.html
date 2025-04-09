@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        ul>li{
+            color: chocolate;
+        }
+        ol>li{
+            color: skyblue;
+        }
+        h2+p{
+            background-color: yellowgreen;
+        }
+        h1+p{
+            background-color: purple;
+        }
+        div+p{
+            background-color: red;
+        }
+
+
+        /* 형제 셀렉터  다음에 오는 형제3들*/
+        h2~p{
+            border:1px solid black
+        }
+        div~p{
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>H3// Lorem, ipsum dolor.</h3>
+    <p> P // Lorem ipsum dolor sit.</p>
+    <h2>h2 // Lorem, ipsum.</h2>
+    <p>p // Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto sequi sapiente vero placeat qui saepe deleniti consequuntur vitae aut earum, rem reprehenderit totam excepturi, quae provident alias veniam, ullam aliquid.</p>
+
+    <h1>h1 // Lorem, ipsumH1.</h1>
+    <p>p // Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda nam fugiat minima explicabo. At magnam labore vitae. Harum repellat minus reprehenderit temporibus adipisci. Praesentium id repellat vero, delectus facilis dolorum?</p>
+
+    <div> div // rolem
+        <p>div>p 안에 있으면 소용 없음음/ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet sed repudiandae repellendus sunt beatae enim, voluptates blanditiis nisi cupiditate, cum et eaque nulla, nihil quod dolore tempora eum a cumque!</p>
+        <p>div>p 아무거나 써도 ?</p>
+    </div>
+    <p>근데 그 안에 쓰면 또 적용됨됨</p>
+  
+
+<br><br><br><br><br>
+    <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Tenetur, eveniet blanditiis?</li>
+        <li>Natus, recusandae optio.</li>
+        <li>Soluta, blanditiis similique?</li>
+    </ul>
+    <ol>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Facere, eius hic.</li>
+        <li>Dolorum, pariatur voluptatem.</li>
+        <li>Enim, nisi commodi?</li>
+    </ol>
+    
+</body>
+
+</html>
