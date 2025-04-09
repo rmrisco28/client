@@ -1,0 +1,35 @@
+<!doctype>
+<htmle>
+
+    <head>
+        <style>
+            /* 같은 선택자에 같은 효과를 주고 싶을때  */
+            /* 그룹 셀렉터라고 한다. group selector */
+            h1, h2 {
+                height: 50px;
+                border-radius: 60px;
+                color: white;
+                background-color: blue;
+            }
+            h2 {
+
+                border: 5px solid red;
+            }
+            a>img, div+img{
+                border: 50px solid green;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Lorem, ipsum.</h1>
+        <h1>Incidunt, eveniet.</h1>
+        <h2>Lorem, ipsum.</h2>
+        <h2>Assumenda, fuga!</h2>
+
+        <img src="../html/사자.jpeg" alt="">
+        <a href=""><img src="../html/사자.jpeg" alt=""></a>
+        <div><img src="../html/사자.jpeg" alt=""></div>
+        <img src="../html/사자.jpeg" alt="">
+    </body>
+</htmle>

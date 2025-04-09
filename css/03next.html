@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- html>head+body -->
+<html>
+
+<head>
+    <style>
+        /* 형제 selector () */
+        h2+p {
+            background-color: gold;
+        }
+
+        h1+p {
+            background-color: skyblue;
+        }
+
+        div+p{
+            background-color: red;
+            /* 다음에 오는 태그가 선택됨 */
+        }
+    </style>
+</head>
+
+<body>
+    (h1>lorem^p>lorem)+(h2>lorem1^p>lorem)
+    <h1>Lorem.</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptates repellat ducimus cumque. Unde libero
+        vero nulla nesciunt soluta minima dolore tempore quo? Pariatur nam iste, facere voluptate dolorum recusandae?
+    </p>
+    <h2>Lorem.</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptates excepturi perferendis mollitia
+        voluptate odit sunt, reprehenderit eligendi sit dignissimos molestias, at cupiditate nisi praesentium quaerat
+        cum? Voluptatem, quo. Nobis!</p>
+    <div>lorem</div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt a odit commodi quo veritatis
+            sapiente aut nemo dolor porro corporis tempore pariatur, consequuntur totam. Dolorem tenetur obcaecati
+            voluptatem odit.</p>
+    <!-- table>thead+tbody -->
+    <table>
+        <thead></thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- h1+p -->
+    <h1></h1>
+    <p></p>
+</body>
+
+</html>

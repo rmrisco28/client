@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        /* tag name selector(element selector) */
+        h1{
+            background-color: red;
+            color: white;
+        }
+        h2{
+            background-color: blue;
+            color: yellow;
+        }
+        ul>li{
+            color: chocolate;
+        }
+        /* 같은 선택자에서 원하는 선택자만 선택할 경우 ul>li 처럼 쓰기
+        이것을 child selector 라고 한다.
+        자식 엘레멘트 */
+        ol>li{
+            color: skyblue;
+        }
+        a>img{
+            border: 5px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lorem.</h1>
+    <h1>Nulla.</h1>
+    <h2>Lorem.</h2>
+    <h2>Distinctio.</h2>
+    <ul>
+        <li>Lorem.</li>
+        <li>Obcaecati.</li>
+        <li>Velit.</li>
+    </ul>
+    <ol>
+        <li>Lorem.</li>
+        <li>Commodi.</li>
+        <li>Atque.</li>
+    </ol>
+
+    <img src="../html/사자.jpeg" alt="">
+    <a href="https://naver.com">
+        <img src="../html/사자.jpeg" alt=""></a>
+</body>
+
+</html>
