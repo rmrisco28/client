@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* id class(pseudo), element */
+        h1{
+            background-color: skyblue;
+        }
+        .head{
+            background-color: beige;
+        } /* 엘레멘트보다 클래스가 강하다. */
+        .head.note{
+            background-color: yellow;
+        } /* 같은 클래스더라도 여러개 쓰는것에 우선순위가 있다.*/
+        #header1{
+            background-color: blue;
+        } /* 아무리 클래스를 많이 써도 id에게 우선순위가 있다.*/
+        /* 마우스를 커버해보면 보이는 selector Specificity 1점, 10점, 100점으로 생각하면됨 */
+        .head.note:hover{
+            background-color: orange;
+        } /* 수도를 합치니 이것은 30점이 됨. */
+        #header.head{
+            background-color: gold;
+        }/* 얘는 110점  */
+        .head{
+            background-color: hotpink;
+        } /* 같은 점수면 아래에 있는 것 (순서도 중요하다)*/
+    </style>
+</head>
+<body>
+    <h1>Lorem.</h1>
+    <h1 class="head">Cumque?</h1>
+    <h1 class="head note">Illum?</h1>
+    <h1 id="header1" class="head note">Ad!</h1>
+    <h1>Vero.</h1>
+    <h1>Nesciunt.</h1>
+    <h1>Expedita.</h1>
+    <h1>Dolores.</h1>
+    <h1>Dolorem!</h1>
+    <h1>Possimus?</h1>
+</body>
+</html>

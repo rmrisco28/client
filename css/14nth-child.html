@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 누군가의 자식이고 h1의 두번째째 */
+        h1:nth-child(2){
+            color: yellow;
+        }
+        /* 누가의 자식인인 h1의 홀수번 */
+        h1:nth-child(odd){
+            background-color: skyblue;
+        }
+        /* 누군가의 자식인인 h1의 짝수번 */
+        h1:nth-child(even){
+            border: red 1px solid ;
+        }
+        table{
+            width: 500px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black;
+        }
+        th {
+            background-color: black;
+            color: white;
+        }
+        /* 테이블 중 클래스가 striped인 것에게 짝수칸에 색을 부여하겠다.  */
+        table.striped tr:nth-child(even){
+          background-color: gainsboro;  
+        }
+        #iddd tr:nth-child(odd){
+            background-color: red;
+
+        
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem.</h1>
+    <h1>Ea.</h1>
+    <h1>Commodi.</h1>
+    <div>
+        <h1>Lorem.</h1>
+        <h1>Repellendus.</h1>
+        <h1>Quo.</h1>
+    </div>
+    <h1>text</h1>
+    <!-- table>thead>tr>th*4>lorem1^^^tbody>tr*5>td*4>lorem1 -->
+    <table id="iddd">
+        <thead>
+            <tr>
+                <th>Lorem.</th>
+                <th>Laudantium.</th>
+                <th>Labore.</th>
+                <th>Placeat?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem.</td>
+                <td>Illum.</td>
+                <td>Illum?</td>
+                <td>Sit.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Labore!</td>
+                <td>Voluptas.</td>
+                <td>Possimus.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Incidunt!</td>
+                <td>Laborum.</td>
+                <td>Aut.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Enim!</td>
+                <td>Temporibus?</td>
+                <td>Esse?</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Eveniet?</td>
+                <td>Minima.</td>
+                <td>Exercitationem.</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table class="striped">
+        <thead>
+            <tr>
+                <th>Lorem.</th>
+                <th>Praesentium.</th>
+                <th>Perspiciatis!</th>
+                <th>Quasi.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem.</td>
+                <td>Nam.</td>
+                <td>Sapiente.</td>
+                <td>Nam?</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Sit!</td>
+                <td>Et.</td>
+                <td>Culpa!</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Modi!</td>
+                <td>Accusantium?</td>
+                <td>Corporis?</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Ipsum.</td>
+                <td>Magni!</td>
+                <td>Similique.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Soluta?</td>
+                <td>Quisquam?</td>
+                <td>Iste.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

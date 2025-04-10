@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1{
+            background-color: skyblue;
+        }
+        #head1:hover{
+            background-color: yellow;
+        }
+        /* 마우스 클릭 후 놓지 않은 상태 */
+        #head1:active{
+            background-color: blue;
+        }
+        /* head2에 hover일땐 빨간 테두리가 적용되도록, active상태일땐 오렌지 색 */
+        #head2:hover{
+            border: 2px solid red;
+        }
+        #head2:active{
+            background-color:orange;
+        }
+        img{
+            width: 150px;
+            height: 100px;
+            border: 5px solid blue;
+        }
+        img:hover{
+            border-color: skyblue;
+        }
+        img:active{
+            width: 145px;
+            height: 95px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 id="head1">Lorem.</h1>
+    <h1 id="head2">Esse.</h1>
+    <h1 id="head3">Autem.</h1>
+    <h1 id="head4">Laboriosam!</h1>
+    <h1 id="head5">Accusamus!</h1>
+    <hr>
+    <img src="../html/사자.jpeg" alt="">
+    <img src="../html/독수리.jpg" alt="">
+    <img src="../html/고양이.webp" alt="">
+    <img src="../html/강아지.png" alt="">
+</body>
+</html>

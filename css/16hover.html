@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 테이블의 색과 크기를 변경합니다. */
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 500px;
+        }
+        /* th, tr td 의 선 색을 부여합니다. */
+        th, tr, td {
+            border: 1px solid black;
+        }
+        /* tbody 의 자식인 홀수번째 tr에게 짙은 회색을 부여합니다. */
+        tbody tr:nth-child(odd){
+            background-color: #cccccc;
+        }
+        /* tbodt의 자식인 tr에 호버 했을때 회색으로 바꿉니다. */
+        tbody tr:hover{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Lorem.</th>
+                <th>Ipsam?</th>
+                <th>Libero?</th>
+                <th>Soluta.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem.</td>
+                <td>Necessitatibus!</td>
+                <td>Magnam.</td>
+                <td>Nobis.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Culpa?</td>
+                <td>Earum.</td>
+                <td>Sit!</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Obcaecati.</td>
+                <td>Nihil?</td>
+                <td>Tempora?</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

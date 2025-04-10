@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1:hover{
+            background-color: yellow;
+        }
+        #head1{
+            background-color: skyblue;
+        }
+        /* 위와 같을 때 왜 동작을 안할까? */
+        /* id, class(pseudo), element 들을 조합해서 쓰는데 이때 선택자의 우선순위가 있음*/
+        /* 우선순위가 어떻게 결정되냐면 */
+        /* 엘레멘트보다 클래스가 우선순위, 클래스보다 id가 우선순위임 */
+    </style>
+</head>
+<body>
+    <!-- h1#head$*5>lorem1 -->
+     <h1 id="head1">Lorem.</h1>
+     <h1 id="head2">Distinctio?</h1>
+     <h1 id="head3">Id?</h1>
+     <h1 id="head4">Libero?</h1>
+     <h1 id="head5">Repellendus?</h1>
+</body>
+</html>

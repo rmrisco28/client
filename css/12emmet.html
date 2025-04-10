@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <!-- element selector -->
+    <h1></h1>
+    <p></p>
+    <!-- 여러개 *숫자 -->
+    <!-- p*2 -->
+    <p></p>
+    <p></p>
+    <!-- h3*4 -->
+    <h3></h3>
+    <h3></h3>
+    <h3></h3>
+    <h3></h3>
+    <!-- 형제 셀렉터 -->
+    <!-- h3+p -->
+    <h3></h3>
+    <p></p>
+    <!-- 자식 selector -->
+    <!-- h3>img -->
+    <h3><img src="" alt=""></h3>
+    <!-- ul>li*3 -->
+    <lu>
+        <li></li>
+        <li></li>
+        <li></li>
+    </lu>
+    <!-- h3>a+img -->
+    <h3>
+        <a href=""></a>
+        <img src="" alt="">
+    </h3>
+    <!-- h3>a>img -->
+    <h3>
+        <a href="">
+            <img src="" alt="">
+        </a>
+    </h3>
+    <!-- class selector -->
+    <!-- h3.header -->
+    <h3 class="header"></h3>
+    <!-- p.note*3 -->
+    <p class="note"></p>
+    <p class="note"></p>
+    <p class="note"></p>
+
+    <!-- id selector -->
+    <!-- h3#header1 -->
+    <h3 id="header1"></h3>
+    <!-- p#note10 -->
+    <p id="note10"></p>
+    <!-- id#note11 은 안됨. id는 하나씩 필요하니 -->
+    <p id="note11"></p>
+    <p id="note11"></p>
+    <p id="note11"></p>
+
+    <!-- 번호 증가 -->
+    <!-- p#note$*3 -->
+    <p id="note1"></p>
+    <p id="note2"></p>
+    <p id="note3"></p>
+
+    <!-- 나중에 배울 건데 div 를 자주 쓰게 됨 -->
+    <h3 class="header"></h3>
+    <!-- div.header -->
+    <div class="header"></div>
+    <!-- .header -->
+    <div class="header"></div>
+
+    <!-- div#spe1.note.error -->
+    <div id="spe1" class="note error"></div>
+    <!-- spe1.note.error -->
+    <div id="spe1" class="note error"></div>
+
+    <!-- table>thead+tobdy -->
+    <table>
+        <thead></thead>
+        <tobdy></tobdy>
+    </table>
+    <!-- tr이랑 tb도 한번에 만들고싶다 -->
+    <!-- table>thead>tr^tbody -->
+    <table>
+        <thead>
+            <tr></tr>
+        </thead>
+        <tobdy></tobdy>
+    </table>
+    <!-- 한 부모 위로 올라가는것 ^ (caret) -->
+    <!-- table>thead>tr>td*3^^tbody -->
+    <table>
+    <thead>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody></tbody>
+    </table>
+    <!-- table>thead>tr>td*3>lorem1^^^tbody -->
+    <table>
+        <thead>
+            <tr>
+                <td>Lorem.</td>
+                <td>Labore.</td>
+                <td>Eveniet?</td>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <!-- table>thead>tr>td*3>lorem1^^^tbody>tr*4>td*3>lorem1 -->
+    <table>
+        <thead>
+            <tr>
+                <td>Lorem.</td>
+                <td>Suscipit!</td>
+                <td>Illo!</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem.</td>
+                <td>Accusamus?</td>
+                <td>Dignissimos.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Delectus.</td>
+                <td>Vero.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Molestias.</td>
+                <td>Perspiciatis.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Tempora.</td>
+                <td>Iste.</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- table#table1.striped>thead>tr>th.table-header*4>lorem1^^^tobdy>tr*3>td.table-cell*4>lorem1 -->
+    <table id="table1" class="striped">
+        <thead>
+            <tr>
+                <th class="table-header">Lorem.</th>
+                <th class="table-header">Maiores.</th>
+                <th class="table-header">Nostrum.</th>
+                <th class="table-header">Nostrum?</th>
+            </tr>
+        </thead>
+        <tobdy>
+            <tr>
+                <td class="table-cell">Lorem.</td>
+                <td class="table-cell">Amet.</td>
+                <td class="table-cell">Consequuntur?</td>
+                <td class="table-cell">Enim.</td>
+            </tr>
+            <tr>
+                <td class="table-cell">Lorem.</td>
+                <td class="table-cell">Dolor?</td>
+                <td class="table-cell">Molestias.</td>
+                <td class="table-cell">Assumenda!</td>
+            </tr>
+            <tr>
+                <td class="table-cell">Lorem.</td>
+                <td class="table-cell">Commodi?</td>
+                <td class="table-cell">Alias.</td>
+                <td class="table-cell">Assumenda.</td>
+            </tr>
+        </tobdy>
+    </table>
+
+    <table id="table1" class="striped">
+        <thead>
+            <tr>
+                <th id="tablehead1" class="tableheader">Lorem.</th>
+                <th id="tablehead2" class="tableheader">Facilis.</th>
+                <th id="tablehead3" class="tableheader">Blanditiis.</th>
+                <th id="tablehead4" class="tableheader">Cumque.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem.</td>
+            </tr>
+            <tr>
+                <td>Magnam?</td>
+            </tr>
+            <tr>
+                <td>Voluptatum!</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
