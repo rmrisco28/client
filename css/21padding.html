@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            width: 200px;
+            height: 100px;
+            border: 5px solid black;
+        }
+        h1:nth-child(even){
+            background-color: orange;
+        }
+        h1:nth-child(odd){
+            background-color: deepskyblue;
+        }
+        #head1{
+            /* 컨텍트 영역-테두리 사이 간격 */
+            padding: 10px;
+        }
+        #head2{
+            padding:15px;
+        }
+        #head3{
+            padding-top: 15px;
+        }
+        #head4{
+            padding-bottom: 17px;
+        }
+        #head5{
+            padding-left: 20px;
+        }
+        #head6{
+            padding-right: 18px;
+        }
+        #head7{
+            padding-top: 5px;
+            padding-right: 7px;
+            padding-bottom: 9px;
+            padding-left: 11px;
+        }
+        #head8{ 
+            /* 위 오른쪽 아래 왼쪽 */
+            padding: 12px, 14px, 16px, 18px
+        }
+        #head9{
+            /* 위 좌우 아래 */
+            padding: 3px 5px 7px;
+        }
+        #head10{
+            /* 상하 좌우 */
+            padding: 2px 4px;
+        }
+        h3{
+            border: 7px solid black;
+        }
+        h3:nth-child(even){
+            background-color: blue;
+            
+        }
+        h3:nth-child(odd){
+            background-color: red;
+        }
+        #head12{
+            padding: 10px;
+        }
+        #head13{
+            padding-top: 11px;
+        }
+        #head14{
+            padding-bottom: 13px;
+        }
+        #head15{
+            padding-left: 15px;
+        }
+        #head16{
+            padding-right: 17px;
+        }
+        #head17{
+            padding: 12px 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1#head$*10>lorem -->
+    <h1 id="head1">Lorem.</h1>
+    <h1 id="head2">Praesentium!</h1>
+    <h1 id="head3">Veniam?</h1>
+    <h1 id="head4">Officia?</h1>
+    <h1 id="head5">Consequuntur!</h1>
+    <h1 id="head6">Quisquam.</h1>
+    <h1 id="head7">Commodi.</h1>
+    <h1 id="head8">Obcaecati.</h1>
+    <h1 id="head9">Culpa!</h1>
+    <h1 id="head10">Animi!</h1>
+
+    <hr>
+    <!-- h3#head$@12*10>lorem1 -->
+    <!-- h3홀수번째 배경 red, h3 짝수번재 배경 blue -->
+    <!-- h3의 테두리7px -->
+    <!--  4방향 패딩 10px -->
+    <h3 id="head12">Lorem.</h3>
+    <!-- 위 방향 11px -->
+    <h3 id="head13">Praesentium!</h3>
+    <!-- 아래 패딩 13px -->
+    <h3 id="head14">Non?</h3>
+    <!-- 왼쪽 패딩 15px -->
+    <h3 id="head15">Optio!</h3>
+    <!-- 오른쪽 패딩 17px -->
+    <h3 id="head16">Provident!</h3>
+    <!-- 좌우 20, 상하 12 -->
+    <h3 id="head17">Facilis?</h3>
+
+
+    <h3 id="head18">Cum.</h3>
+    <h3 id="head19">Error!</h3>
+    <h3 id="head20">Laudantium!</h3>
+    <h3 id="head21">Aperiam.</h3>
+</body>
+</html>

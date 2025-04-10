@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            width: 200px;
+            height: 100px;
+            background-color: violet;
+            border: 5px solid yellow;
+        }
+        #head1{
+            margin: 30px;
+        }
+        /* margin에도 네 방향이 있음 */
+        /* 위에만 줬는데도 아래도 생김 */
+        /* 위 아래 마진은 큰 값으로 결정 */
+        /* 좌 우 마진은 더해서 결정 */
+        /* 요소마다 기본 패딩과 마진이 있을 수 있다. */
+        #head2{
+            margin-top: 70px;
+        }
+        #head3{
+            margin-right: 50px;
+        }
+        #head4{
+            margin-bottom: 70px;
+        }
+        #head5{
+            margin-left: 60px;
+        }
+        #head6{
+            margin-top: 15px;
+            margin-right: 20px;
+            margin-bottom: 77px;
+            margin-left: 25px;
+        }
+        #head7{
+            margin: 15px 20px 77px 25px;
+        }
+        /* 헤드 6과 7은 같다. margin만 적었을 경우 위에부터 시계방향으로 상우하좌 으로 된다 */
+        #head8{
+            /* 위 좌우 아래 */
+            margin: 15px 20px 77px;
+        }
+        #head9{
+            /* 상하 좌우 */
+            margin: 20px 22px;
+        }
+        #head10{
+            /* 좌우 margin auto: 항상 가운데 위치 */
+            margin: 20px auto;
+        }
+        /* 위 아래 가운데 정렬은 좀 어려우니 나중에 */
+        #head11{
+            margin-left: 1000px;
+        }
+        #head12{
+            margin: 10px auto 10px;
+        }
+        #head13{
+            margin-bottom: 300px;
+        }
+        #head14{
+            margin: 50px 200px;
+        }
+        #head15{
+            margin-top: 50px;
+        }
+        #head16{
+            margin-left: auto;
+        }
+        #head17{
+            margin-right: auto;
+        }
+        #head18{
+            margin: auto 0px;
+        }
+        #head19{
+            margin: 0px auto;
+        }
+        #head20{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- margin: 테두리 바깥 영역(다른 요소(앨레멘트)들의 간격 -->
+    <h1 id="head1">Lorem.</h1>
+    <h1 id="head2">Officiis.</h1>
+    <h1 id="head3">Corrupti?</h1>
+    <h1 id="head4">Quasi!</h1>
+    <h1 id="head5">Quasi.</h1>
+    <h1 id="head6">Doloribus.</h1>
+    <h1 id="head7">Necessitatibus.</h1>
+    <h1 id="head8">Sequi.</h1>
+    <h1 id="head9">Tenetur.</h1>
+    <h1 id="head10">Aspernatur.</h1>
+
+    <!-- h1#head$@11*10>lorem1 -->
+    <h1 id="head11">11</h1>
+    <h1 id="head12">12</h1>
+    <h1 id="head13">13</h1>
+    <h1 id="head14">14</h1>
+    <h1 id="head15">15</h1>
+    <h1 id="head16">16</h1>
+    <h1 id="head17">17</h1>
+    <h1 id="head18">18</h1>
+    <h1 id="head19">19</h1>
+    <h1 id="head20">20</h1>
+</body>
+</html>
