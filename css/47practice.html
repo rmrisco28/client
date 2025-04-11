@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title {
+
+            display: flex;
+            align-items: center;
+
+        }
+
+        .logo {
+            color: green;
+            font-size: 30px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .button {
+            padding: 20px;
+        }
+
+        .button:hover {
+            background-color: green;
+            color: white;
+        }
+
+        .search {
+            border: #cccccc solid 1px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            /* justify 를 쓴 이유는 flex 박스가 되어서 가로중 가운데 맞춘게 아니라 세로중 맞추기 위함함 */
+            align-items: center;
+            width: 100px;
+            height: 30px;
+
+        }
+
+        .shop-button {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .shop-button:hover {
+            background-color: rgb(165, 165, 165);
+            border-radius: 30%;
+        }
+
+        #sign-in {
+            margin-left: 30px;
+            background-color: rgb(78, 194, 78);
+            border-radius: 40%;
+            display: flex;
+            align-items: center;
+        }
+
+        #log-in {
+            background-color: rgb(183, 221, 183);
+            border-radius: 40%;
+            display: flex;
+            align-items: center;
+        }
+
+        #sign-in:hover,
+        #log-in:hover {
+            background-color: rgb(45, 63, 45);
+            border-radius: 20%;
+            color: white;
+        }
+
+
+
+
+        .black-bar {
+            background-color: rgb(99, 99, 99);
+            display: flex;
+            justify-content: space-evenly;
+            color: white;
+            font-weight: 500;
+        }
+
+        .language {
+            padding: 15px;
+            display: flex;
+        }
+
+        .language:hover {
+            background-color: rgb(54, 54, 54);
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .left-box {
+            background-color: #ddd;
+            padding: 10px;
+        }
+
+        #htmltutorials {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .left-p {
+            padding: 3px 10px;
+            text-align: right;
+        }
+
+        .left-p:hover {
+            background-color: #999;
+        }
+
+
+        .center-button {
+            display: flex;
+            justify-content: space-between;
+        }
+        .main-head{
+            margin: auto 600px;
+        }
+
+        .main-button {
+            background-color: green;
+            border-radius: 30%;
+            font-size: 20px;
+            color: white;
+        }
+
+        .main-button:hover {
+            background-color: rgb(0, 90, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <div class="logo">W3</div>
+        <div class="button">Tutorials</div>
+        <div class="button">Exercises</div>
+        <div class="button">Certificates</div>
+        <div class="button">Services</div>
+        <div class="search">search</div>
+        <div class="shop-button">Get Certified</div>
+        <div class="sign" id="sign-in">Sign up</div>
+        <div class="sign" id="log-in">Log in</div>
+    </div>
+    <div class="black-bar">
+        <div class="language">html</div>
+        <div class="language">css</div>
+        <div class="language">javascript</div>
+        <div class="language">sql</div>
+        <div class="language">python</div>
+        <div class="language">java</div>
+        <div class="language">php</div>
+        <div class="language">how to</div>
+    </div>
+    <div class="main">
+        <div class="left-box">
+            <div id="htmltutorials">hmtl Tutorials</div>
+            <div class="left-p">Lorem, ipsum.</div>
+            <div class="left-p">Eum, earum.</div>
+            <div class="left-p">Blanditiis, culpa!</div>
+            <div class="left-p">Dicta, reiciendis!</div>
+            <div class="left-p">Fugit, repellat!</div>
+            <div class="left-p">Dignissimos, eum?</div>
+            <div class="left-p">In, qui.</div>
+            <div class="left-p">Dolor, non.</div>
+            <div class="left-p">Eligendi, quos.</div>
+            <div class="left-p">Qui, cum?</div>
+            <div class="left-p">Minus, quod.</div>
+            <div class="left-p">Tempore, dolores.</div>
+            <div class="left-p">Error, ratione.</div>
+            <div class="left-p">Aut, dolore?</div>
+            <div class="left-p">Aperiam, quos.</div>
+            <div class="left-p">Suscipit, eum!</div>
+            <div class="left-p">Maxime, aspernatur!</div>
+            <div class="left-p">Aliquid, ut.</div>
+            <div class="left-p">Illum, animi?</div>
+            <div class="left-p">Hic, quisquam?</div>
+            <div class="left-p">Sunt, aliquid.</div>
+            <div class="left-p">Consequatur, sit.</div>
+            <div class="left-p">Facilis, reiciendis.</div>
+            <div class="left-p">Minus, facilis.</div>
+            <div class="left-p">Placeat, nisi.</div>
+            <div class="left-p">Enim, voluptates?</div>
+            <div class="left-p">Esse, sint.</div>
+            <div class="left-p">Doloremque, eligendi?</div>
+        </div>
+        <div>
+            <h1 class="main-head">Html Tutorials</h1>
+            <div class="center-button">
+                <div class="main-button">HOME</div>
+                <div class="main-button">next</div>
+            </div>
+            <div class="learn-html">
+                <h1>안녕하세요</h1>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
