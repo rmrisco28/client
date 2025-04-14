@@ -43,7 +43,8 @@
         .circle-button:hover {
             background-color: rgb(0, 41, 0);
         }
-        #sign-up{
+
+        #sign-up {
             background-color: rgb(0, 202, 0);
             position: relative;
             left: 20px;
@@ -51,6 +52,11 @@
 
         .menu-container {
             display: flex;
+            position: fixed;
+            top: 8px;
+            width: 100%    
+            ;
+            background-color: white;
         }
 
         .cart-button {
@@ -65,12 +71,16 @@
         .second-top-bar {
             display: flex;
             background-color: black;
+            position: fixed;
+            top: 63px;
+            width: 100%;
         }
 
         .second-menu-item {
             background-color: balck;
             color: white;
             padding: 16px;
+            
         }
 
         .second-menu-item:hover {
@@ -81,6 +91,8 @@
         .main-content-container {
             display: flex;
             height: 100vh;
+            margin-top: 116px;
+
 
         }
 
@@ -96,6 +108,7 @@
 
         .main-content {
             flex: 1;
+
         }
 
         .side-menu-header {
@@ -137,59 +150,65 @@
         .main-content {
             margin: 24px;
         }
-        .left-padding{
+
+        .left-padding {
             padding-left: 30px;
         }
+
     </style>
 </head>
 
 <body>
-    <div class="menu-container">
-        <div class="logo" style="color: green;">
-            <i class="fa-solid fa-w"></i>
-        </div>
-        <div class="nemo-button">
-            Tutorials <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div class="nemo-button">
-            Exercise <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div class="nemo-button">
-            certificates <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div class="nemo-button">
-            Services <i class="fa-solid fa-caret-down"></i>
-        </div>
+    <div id="fisrt">
+        <div class="menu-container">
+            <div class="logo" style="color: green;">
+                <i class="fa-solid fa-w"></i>
+            </div>
+            <div class="nemo-button">
+                Tutorials <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="nemo-button">
+                Exercise <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="nemo-button">
+                certificates <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="nemo-button">
+                Services <i class="fa-solid fa-caret-down"></i>
+            </div>
 
-        <div class="cart-button">
-            <span>
-                <span style="color: blue;">
-                    <i class="fa-solid fa-cart-shopping"></i>
+            <div class="cart-button">
+                <span>
+                    <span style="color: blue;">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                    Get certified
                 </span>
-                Get certified
-            </span>
-        </div>
-        <div id="sign-up" class="circle-button">
-            <span>
-                sign up
-            </span>
-        </div>
-        <div  class="circle-button left-padding">
-            <span>
-                log in
-            </span>
+            </div>
+            <div id="sign-up" class="circle-button">
+                <span>
+                    sign up
+                </span>
+            </div>
+            <div class="circle-button left-padding">
+                <span>
+                    log in
+                </span>
+            </div>
         </div>
     </div>
     <!-- 두번째 상단바 -->
-    <div class="second-top-bar">
-        <div class="second-menu-item">Lorem.</div>
-        <div class="second-menu-item">Obcaecati.</div>
-        <div class="second-menu-item">Eaque.</div>
-        <div class="second-menu-item">Cum.</div>
-        <div class="second-menu-item">Est.</div>
-        <div class="second-menu-item">Architecto?</div>
-        <div class="second-menu-item">Exercitationem.</div>
-        <div class="second-menu-item">Necessitatibus!</div>
+    <div id="second">
+        <div class="second-top-bar">
+            <div class="second-menu-item">Lorem.</div>
+            <div class="second-menu-item">Obcaecati.</div>
+            <div class="second-menu-item">Eaque.</div>
+            <div class="second-menu-item">Cum.</div>
+            <div class="second-menu-item">Est.</div>
+            <div class="second-menu-item">Architecto?</div>
+            <div class="second-menu-item">Exercitationem.</div>
+            <div class="second-menu-item">Necessitatibus!</div>
+        </div>
     </div>
 
     <div class="main-content-container">
@@ -259,26 +278,32 @@
             <h3>Hic, dolorem!</h3>
             <p>Impedit, repellat, at qui non error eos rem ipsa molestias magnam, tempora nisi mollitia et cum
                 reiciendis
-                dicta ratione illum reprehenderit quia laudantium earum. Ullam iste dolores repudiandae natus ipsam?</p>
+                dicta ratione illum reprehenderit quia laudantium earum. Ullam iste dolores repudiandae natus ipsam?
+            </p>
             <h3>Vero, rem!</h3>
-            <p>Suscipit laboriosam modi possimus eligendi dolorem ea! Quos eum enim, possimus temporibus ex corporis!
+            <p>Suscipit laboriosam modi possimus eligendi dolorem ea! Quos eum enim, possimus temporibus ex
+                corporis!
                 Repudiandae adipisci, corporis necessitatibus assumenda commodi iste at, quod deserunt sit ullam
                 repellendus
                 autem a accusantium.</p>
             <h3>Quod, praesentium?</h3>
-            <p>Vero suscipit exercitationem qui debitis porro! Facilis perspiciatis nulla amet, dolorem delectus quam
+            <p>Vero suscipit exercitationem qui debitis porro! Facilis perspiciatis nulla amet, dolorem delectus
+                quam
                 corporis. Sit dolorum tempore dolore, expedita saepe perferendis placeat aliquid rerum voluptatem
                 provident
                 eius in, quisquam doloremque.</p>
             <h3>Dolorum, facilis?</h3>
-            <p>Itaque reiciendis molestias quae minima autem eius libero rem ratione facilis mollitia dolorum numquam,
+            <p>Itaque reiciendis molestias quae minima autem eius libero rem ratione facilis mollitia dolorum
+                numquam,
                 eaque
-                architecto at commodi expedita repudiandae et error quo quaerat aliquam vero! Facere repellat quos a.
+                architecto at commodi expedita repudiandae et error quo quaerat aliquam vero! Facere repellat quos
+                a.
             </p>
         </div>
         <div class="ad-container"></div>
 
     </div>
+
 </body>
 
 </html>

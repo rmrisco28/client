@@ -43,7 +43,8 @@
         .circle-button:hover {
             background-color: rgb(0, 41, 0);
         }
-        #sign-up{
+
+        #sign-up {
             background-color: rgb(0, 202, 0);
             position: relative;
             left: 20px;
@@ -81,6 +82,7 @@
         .main-content-container {
             display: flex;
             height: 100vh;
+            margin-top: 105px;
 
         }
 
@@ -137,59 +139,71 @@
         .main-content {
             margin: 24px;
         }
-        .left-padding{
+
+        .left-padding {
             padding-left: 30px;
+        }
+        .fixed-top-menu{
+            position: fixed;
+            top: 0;
+            left: 0px;
+            width: 100vw;
+            padding: 0px 24px 0px 8px;
+            box-sizing: border-box;
+            background-color: white;
         }
     </style>
 </head>
 
 <body>
-    <div class="menu-container">
-        <div class="logo" style="color: green;">
-            <i class="fa-solid fa-w"></i>
-        </div>
-        <div class="nemo-button">
-            Tutorials <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div class="nemo-button">
-            Exercise <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div class="nemo-button">
-            certificates <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div class="nemo-button">
-            Services <i class="fa-solid fa-caret-down"></i>
-        </div>
+    <div class="fixed-top-menu">
+        <div class="menu-container">
+            <div class="logo" style="color: green;">
+                <i class="fa-solid fa-w"></i>
+            </div>
+            <div class="nemo-button">
+                Tutorials <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="nemo-button">
+                Exercise <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="nemo-button">
+                certificates <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="nemo-button">
+                Services <i class="fa-solid fa-caret-down"></i>
+            </div>
 
-        <div class="cart-button">
-            <span>
-                <span style="color: blue;">
-                    <i class="fa-solid fa-cart-shopping"></i>
+            <div class="cart-button">
+                <span>
+                    <span style="color: blue;">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                    Get certified
                 </span>
-                Get certified
-            </span>
+            </div>
+            <div id="sign-up" class="circle-button">
+                <span>
+                    sign up
+                </span>
+            </div>
+            <div class="circle-button left-padding">
+                <span>
+                    log in
+                </span>
+            </div>
         </div>
-        <div id="sign-up" class="circle-button">
-            <span>
-                sign up
-            </span>
+        <!-- 두번째 상단바 -->
+        <div class="second-top-bar">
+            <div class="second-menu-item">Lorem.</div>
+            <div class="second-menu-item">Obcaecati.</div>
+            <div class="second-menu-item">Eaque.</div>
+            <div class="second-menu-item">Cum.</div>
+            <div class="second-menu-item">Est.</div>
+            <div class="second-menu-item">Architecto?</div>
+            <div class="second-menu-item">Exercitationem.</div>
+            <div class="second-menu-item">Necessitatibus!</div>
         </div>
-        <div  class="circle-button left-padding">
-            <span>
-                log in
-            </span>
-        </div>
-    </div>
-    <!-- 두번째 상단바 -->
-    <div class="second-top-bar">
-        <div class="second-menu-item">Lorem.</div>
-        <div class="second-menu-item">Obcaecati.</div>
-        <div class="second-menu-item">Eaque.</div>
-        <div class="second-menu-item">Cum.</div>
-        <div class="second-menu-item">Est.</div>
-        <div class="second-menu-item">Architecto?</div>
-        <div class="second-menu-item">Exercitationem.</div>
-        <div class="second-menu-item">Necessitatibus!</div>
     </div>
 
     <div class="main-content-container">

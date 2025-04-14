@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+        }
+
+        div:nth-child(odd) {
+            background-color: beige;
+        }
+
+        div:nth-child(even) {
+            background-color: skyblue;
+        }
+        #item2{
+            /* fixed: viewport 기준 */
+            /* 정장적 배치 흐름에서 빠진다. */
+            position: fixed;
+            top: 200px;
+        }
+        /* 3번 엘레멘트를 보이게 하는 방법 */
+        /* 1번 아이템 엘레멘트에 마진을 100% 준다 */
+        #item1{
+            margin-bottom: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="item1">1</div>
+    <div id="item2">2</div>
+    <div id="item3">3</div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div id="1">4</div>
+</body>
+
+</html>
