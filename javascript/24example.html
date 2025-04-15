@@ -11,33 +11,27 @@
 </head>
 
 <body>
-    
+    나이: <input type="text" id="input1">    
+    <!-- button.btn.btn-secondary -->
+    <button id="btn1" class="btn btn-secondary">결과</button>
+    <hr>
+    <h3 id="result"></h3>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script>
-        // 산술 연산의 일종
-        // 모듈로 연산(나머지 연산) (modulus, remainder)
+        function check(){
+            let age= document.querySelector('#input1').value;
+            age = Number(age);
 
-        //10을 2로 나눈 값의 나머지
-        console.log(10%2);// 0
-        console.log(10%3); // 1
-        console.log(10%4); // 2
-        console.log(10%6); // 4
+            let result = (age >= 18) ? "투표 가능" : "투표 불가능";
 
-        // 주로 언제 쓰냐?
-        // 어떤 값의 배수인지를 확인할때
-        console.log(10%2); // 0
-        console.log(10%3); // 1
-        console.log(10%5); // 0
+            document.querySelector('#result').innerText = result;
+        }
 
-        
-
-        
-
-
-        
+        document.querySelector('#btn1').onclick = check;
     </script>
 </body>
 
