@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        // 연결 연산자(concatenate)
+
+        let a = "hello";
+        let b = "js";
+        console.log(a+b);
+
+        // c에 "도널드" d에 " 트럼프"
+        let c = "도날드";
+        let d = " 트럼프";
+        console.log(c+d);
+        
+        // 숫자를 문자열"" 로 묶으면면
+        let e= "3";
+        let f= "4";
+        console.log(e + f); // 34
+        
+        //숫자열끼리는 숫자가 합쳐짐짐
+        let g= 3;
+        let h= 4;
+        console.log(g+h); // 7 
+        
+        // +에 하나라도 string이면 연결연산자
+        // e가 문자열이기 때문에에
+        console.log(e+h); // 34
+
+        console.log(g+h+e); // 73
+        // 왜냐하면 g h는 숫자열로 합쳐진 다음 e를 뒤에 이어지기때문
+        console.log(g+(h+e)); //343
+        
+        
+    </script>
+</body>
+
+</html>

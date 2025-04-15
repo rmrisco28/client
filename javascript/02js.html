@@ -11,24 +11,18 @@
 </head>
 
 <body>
-    <!-- .container>.row>.col*2 -->
-    <div class="container">
-        <div class="row">
-            <div class="col d-none  d-lg-block">
-                <img src="../html/사자.jpeg" alt="" class="img-fluid">
-            </div>
-            <div class="col">
-                <h1>Lorem.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellat facilis quaerat molestias neque quasi unde voluptatem exercitationem, repudiandae eaque consequuntur illum ipsam cum aut iure architecto odio ducimus ipsum?</p>
-            </div>
-        </div>
-    </div>
-
+    <button>그림 바꾸기</button>
+    <img src="../html/고양이.webp" alt="">
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
+    <script>
+        document.querySelector("button").onclick = function(){
+            document.querySelector("img").src = "../html/강아지.png"
+        }
+    </script>
 </body>
 
-</html>3
+</html>
