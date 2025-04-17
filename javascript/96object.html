@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        // 각 프로퍼티를 새로운 줄에 작성
+        let a = {
+            name: "trump", // 네임 프로퍼티
+            address: "new york",
+            email: "gmail",
+            age: 77,
+            job: "president",
+
+            // 메소드: 값이 함수인 프로퍼티
+            // 메소드: 객체가 가진 함수
+            print: function () { // 프린트 메소드
+                console.log("hello");
+
+            },
+            show: () => console.log("usa")// 쇼 메소드333
+
+
+
+        };
+        console.log(a.name);
+        a.print(); //함수 호출
+        a.show(); // 메소드 호출
+
+
+        //b에 메소드 작성하기
+        let b = {
+            hello: () => console.log("hello"),
+            greeting: () => console.log("greeting")
+
+        };
+
+        b.hello();
+        b.greeting();
+
+
+
+    </script>
+</body>
+
+</html>

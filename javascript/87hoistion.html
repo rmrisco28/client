@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        myCode(); // 가능, hoisting
+
+        // hoisting 함수가 밑에 있어도 끌어올려진다.
+        // 함수 hoisting은 이름이 있는 함수에만 적용된다.
+        function myCode() {
+            console.log("myCode 1");
+        }
+
+        // a(); 는 에러
+
+        let a = function () {
+            console.log("이름 없는 함수 anonymous function");
+
+        }
+        a();
+        // hoisting 되는지 안되는지 고민하지말고,
+        // 함수는 위에 선언 후 사용하는습관을 갖자
+
+
+    </script>
+</body>
+
+</html>
