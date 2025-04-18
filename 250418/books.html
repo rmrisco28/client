@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>books</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <h1>book</h1>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        // 입력
+        let books = [];
+
+
+        for (let i = 0; i < 3; i++) {
+            let book = new Object;
+            book.title = prompt("제목을 입력하세요")
+            book.author = prompt("저자를 입력하세요")
+            book.price = Number(prompt("금액을 입력하세요"))
+            books.push(book);
+        }
+
+        // // 책 찾기
+        // let maxbook;
+
+        
+
+
+        // 출력
+        let result = "";
+        result += `책 제목: ${book.title}, 저자: ${book.author} 금액 ${book.price} <br>`;
+        result += `제일 비싼 책은  입니다.`
+
+        document.write(result);
+
+
+    </script>
+</body>
+
+</html>

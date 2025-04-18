@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <h1>객체</h1>
+    <p>키와 값으로 이루어진 데이터 구조</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        const person = {
+            name: '홍길동',
+            age: 25,
+            isStudent: false
+        };
+
+        // object() 생성자
+        // 객체명, 키 = 값
+        const member = new Object();
+        member.userid = 'abc123';
+        member.passwd = '987xyz';
+        member.email = 'abc123@987.co.kr'
+        member.name = '홍길동';
+
+        // 객체 속성 적근: 점 표기법
+        // 객체명.속성명
+        console.log(person.name);
+        console.log(person.age);
+        console.log(person.isStudent);
+
+        // 객체 속성 접근: 대괄호 표기법
+        // 객체명['속성명']
+        console.log(member['userid'])
+        console.log(member['passwd'])
+        console.log(member['name'])
+        console.log(member['email'])
+
+        // 객체 반복 처리 - 키를 이용해서 값을 출력
+        for(let key in person) {
+            console.log(key, person[key]);
+        };
+
+        // 객체구조분해: ES6에서 추가
+        // 객체에 있는 키를 변수화 시켜서 가져가는 기술
+        // {키1, 키2, ...} = 객체명;
+        const{name, age, isStudent} = person;
+        console.log(name, age, isStudent);
+        
+        // 기타 유용한 메서드
+        console.log(Object.keys(member));
+        console.log(Object.values(member));
+        console.log(Object.entries(member));
+                let name1 = prompt("이름을 입력하세요")
+        let kor1 = prompt("국어을 입력하세요")
+        let eng1 = prompt("영어을 입력하세요")
+        let math1 = prompt("수학을 입력하세요")
+        
+        
+    </script>
+</body>
+
+</html>
