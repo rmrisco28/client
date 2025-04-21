@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        // indexOf : 특정 문자열의 위치(index)를 리턴
+
+        // Donald 의 인덱스 (4부터 9까지)
+        let a = "I'm Donald Trump"
+        let b = a.indexOf("Donald");
+        console.log(b); // 4 
+        console.log(a.indexOf("Trump")); // 11
+
+        // 같은 글자가 있을 경우 앞 글자 출력
+        console.log(a.indexOf("m")); // 2
+        console.log(a.indexOf(" ")); // 3
+        console.log(a.indexOf("I")); // 0
+
+        //  없으면 -1
+        console.log(a.indexOf("donald")); // -1
+
+        console.log("--------");
+        // 두번째 파라미터로 시작 위치를 지정 할 수 있다.
+        // 기본적으로 0으로 되어있다고 봄.
+        console.log(a.indexOf("Trump", 0)); // 11
+
+        // 그 다음 m 찾기
+        console.log(a.indexOf("m", 3)); // 14
+        console.log(a.indexOf(" ")); // 3
+        console.log(a.indexOf("I")); // 0
+        console.log(a.indexOf("donald")); // -1
+
+
+        console.log("---------연습 donald가 나오는 위치 찾기");
+
+        let c = "Donald said that Donald told Donald to remind Donald that Donald was late"
+        // Donald가 몇번 인덱스에서 나오는지 모두 찾기
+
+        console.log(c.indexOf("Donald"));
+        console.log(c.indexOf("Donald", 1));
+        console.log(c.indexOf("Donald", 18));
+        console.log(c.indexOf("Donald", 30));
+        console.log(c.indexOf("Donald", 47));
+        console.log(c.indexOf("Donald", 59));
+
+        console.log("-------------");
+
+        let i = c.indexOf("Donald");
+
+        while (i !== -1) {
+            console.log(i);
+            i = c.indexOf("Donald", i + 1);
+        }
+
+        console.log("-------------");
+        for (i = c.indexOf("Donald"); i !== -1; i = c.indexOf("Donald", i + 1)) {
+            console.log(i);
+        };
+
+    </script>
+</body>
+
+</html>
