@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        // sort: 각 원소를 오름차순으로 정렬, (원본 배열 내에서)
+        // 원본의 배열 참조 리턴
+        // 각 원소를 String 으로 변환 후 정렬
+
+        let a = [1, 3, 21, 10000]
+        a.sort()
+        console.log(a);
+
+        // 두 값 중 어느 것이 더 큰지 결정하는 함수
+        // 두 값을 받기 때문에 파라미터도 두개 필요
+        let fun1 = function (a, b) {
+            // 첫번째 파라미터가 크면 양수
+            // 두번째 파라미터가 크면 음수
+            // 같으면 0을 리턴 한다.
+            /*
+            if(a>b){
+                return 532 // 양수 아무거나
+            }   else if(a<b) {
+                return -3153 // 음수 아무거나
+            } else {
+                return 0;
+            }
+            */
+            return a - b;
+        }
+        a.sort(fun1);
+        console.log(a);
+
+
+
+        a.sort((a, b) => a - b);
+        console.log(a);
+
+
+        // 연습
+        let b = [6, 1, 81, 9, -1, 0, -2];
+        b.sort();
+        console.log(b);
+        // 큰수가 나중에 오도록 정렬
+        // 작은 수가 나중에 오도록 정렬
+        console.log("-----큰수가 뒤에-----");
+        b.sort((a,b)=> a-b);
+        console.log(b);
+        
+        console.log("-----작은 수가 뒤에-----");
+        b.sort((a,b)=> b-a);
+        console.log(b);
+        
+
+        
+
+
+    </script>
+</body>
+
+</html>

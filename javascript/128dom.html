@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- (h1#head$>lorem1^p#para$>lorem3)*3 -->
+    <h1 id="head1" class="top ">Lorem </h1>
+    <p id="para1" class="top mid">Lorem, ipsum dolor.</p>
+    <h1 id="head2" class="mid">Aspernatur </h1>
+    <p id="para2" class="mid bottom">Nam, vel adipisci.</p>
+    <h1 id="head3" class="bottom">Accusantium</h1>
+    <p id="para3" class="top ">Dolore, quo vel.</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        // getElementById("아이디")
+        // getElementByClassName("클래스")
+        // getElementByTagName("태그명")
+        
+        // CSS 에서 사용하는 선택자를 쓰자
+        // querySelector("선택자"): 선택된 한 개 요소만 리턴
+        // querySelectorAll("선택자"): 선택된 여러 요소 리턴(배열)
+        let a = document.querySelector("#head1")
+        console.log(a);
+
+        let b = document.querySelector("#para2")
+        console.log(b);
+        
+        // 주의. 가장 먼저 존재하는 mid 클래스를 선택.
+        let c = document.querySelector('.mid')
+        console.log(c);
+
+        // 여러개 선택 하고 싶을 경우 All 사용
+        let d = document.querySelectorAll('.mid')
+        console.log(d);
+        console.log(d[0]);
+        console.log(d[1]);
+        console.log(d[2]);
+        console.log("---for문 활용");
+        for (let i = 0; i < d.length; i++){
+            console.log(d[i]);
+        }
+
+        // p 요소이면서 미드 인것만 선택하고싶다?
+        let e= document.querySelectorAll("p.mid")
+        for (let i = 0; i < e.length; i++) {
+            console.log(e[i]);
+        }
+
+    </script>
+</body>
+
+</html>
