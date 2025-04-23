@@ -27,18 +27,62 @@
     <script>
         // <li> 추가, 완료버튼, 삭제버튼 추가
         document.querySelector("#btn1").addEventListener("click", function () {
-            let i = document.querySelector("#input1").value;
+            //input 요소 입력된 value
+            let i = document.querySelector("#input1")
+            let v = i.value;
+            // 를 컨텐츠로 갖는 li를 만들어서
+            let newLi = document.createElement("li")
+            newLi.textContent = v;
+            //ul에 붙이기
+            let ul = document.querySelector("#list1")
+            ul.append(newLi);
 
-            document.querySelector("#list1").innerHTML += `<li>${i}<button class="finish">완료</button> <button class="delete">삭제</button></li>`;
-            
-            let btn = document.createElement("button");
+            // 완료 버튼만들어서
+            let doneButton = document.querySelector("button")
+            doneButton.textContent = "완료"
+
+
+
+            // 완료버튼 클릭시
+            doneButton.addEventListener("click", function () {
+                // new Li의 'done' 클래스 추가삭제
+                newLi.classList.toggle("done")
+            })
+
+            if(newLi.classList.contains("done")){
+                // done 클래스가 있으면
+                // 버튼의 text를 취소
+                doneButton.textContent ="취소"
+            }else {
+                // 없으면 text를 완료
+                doneButton.textContent = "완료"
+            }
+            // li에 붙이기
+            newLi.append(doneButton);
+
+
+
+            // 삭제버튼 만들어서
+            let removeButton = document.querySelector("button")
+            removeButton.textContent = "삭제"
+            // li에 붙이기
+            newLi.append(removeButton)
+
+            // 삭제버튼 클릭 시
+            removeButton.addEventListener("click", function () {
+                // newLi 삭제
+                newLi.remove();
+
+
+                // input 초기화
+                i.value = "";
+            })
+
+
         })
 
-        document.querySelector("list1").addEventListener("click", function () {
-            
 
-        })
-        // let buttons = document.querySelectorAll("button");
+
 
 
     </script>
